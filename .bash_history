@@ -55,3 +55,25 @@ git push https://github.com/jamdin/jdiner-byte1
 git push --set-upstream https://github.com/jamdin/jdiner-byte1 master
 dev_appserver.py $PWD
 gcloud app deploy
+git add *
+git commit -m "updated question"
+gcloud app deploy
+git add .
+git commit -m "updated question"
+git push
+dev_appserver.py $PWD
+git add *
+git commit -m "updated question"
+git add .
+git commit -m "updated question"
+git push
+dev_appserver.py $PWD
+git pull
+git add jdiner-byte1
+git commit "updated question"
+git commit -m  "updated question"
+git status
+git add .
+git status
+git reset
+git status
