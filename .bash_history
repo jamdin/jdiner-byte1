@@ -77,3 +77,7 @@ git add .
 git status
 git reset
 git status
+git clone https://github.com/jamdin/jdiner-byte1
+git pull
+dev_appserver.py $PWD
+gcloud app deploy
