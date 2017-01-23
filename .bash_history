@@ -23,3 +23,35 @@ git clone https://github.com/GoogleCloudPlatform/appengine-try-python-flask.git 
 cd $TUTORIALDIR
 git checkout gcloud
 dev_appserver.py $PWD
+git add *
+git commit -m "final version"
+git push
+git init
+git add *
+git commit -m "final version"
+git push
+git status
+git push -u github master
+git push -u jdiner-byte1 master
+git remote remove origin
+git status
+git push master
+git push jdinergit push -byte1
+git push --set-upstream  jdiner-byte1 master
+git pull
+git pull https://github.com/jamdin/jdiner-byte1
+git push
+git push remote jdiner-byte1
+ls
+git push remote jdiner-byte1-github
+git push remote jdiner-byte1
+git push --set-upstream remote jdiner-byte1
+git status
+git add .
+git commit -m "working version"
+git push
+git push git commit -m 'initial commit'
+git push https://github.com/jamdin/jdiner-byte1
+git push --set-upstream https://github.com/jamdin/jdiner-byte1 master
+dev_appserver.py $PWD
+gcloud app deploy
