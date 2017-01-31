@@ -81,3 +81,9 @@ git clone https://github.com/jamdin/jdiner-byte1
 git pull
 dev_appserver.py $PWD
 gcloud app deploy
+gcloud config configurations list
+gcloud app deploy
+gcloud beta sql connect mobile-data --user=root --pasword
+gcloud beta sql connect mobile-data --user=root --password
+gcloud beta sql connect mobile-data --user=root
+gcloud beta sql connect mobile-data --user=jamdin
