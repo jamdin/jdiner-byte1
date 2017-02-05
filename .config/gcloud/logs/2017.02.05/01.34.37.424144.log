@@ -1,0 +1,35 @@
+2017-02-05 01:34:37,470 DEBUG    root            Loaded Command Group: ['gcloud', 'app']
+2017-02-05 01:34:37,777 DEBUG    root            Loaded Command Group: ['gcloud', 'app', 'create']
+2017-02-05 01:34:38,040 DEBUG    root            Running gcloud.app.create with Namespace(__calliope_internal_deepest_parser=ArgumentParser(prog='gcloud.app.create', usage=None, description='Create an App Engine app within the current Google Cloud Project.', version=None, formatter_class=<class 'argparse.HelpFormatter'>, conflict_handler='error', add_help=False), account=None, authority_selector=None, authorization_token_file=None, calliope_command=<googlecloudsdk.calliope.backend.Command object at 0x7f5c331a6cd0>, command_path=['gcloud', 'app', 'create'], configuration=None, credential_file_override=None, document=None, flatten=None, format=None, h=None, help=None, http_timeout=None, log_http=None, project=None, quiet=None, region=None, trace_email=None, trace_log=None, trace_token=None, user_output_enabled=None, verbosity='warning', version=None).
+2017-02-05 01:34:38,194 INFO     ___FILE_ONLY___ You are creating an app for project [jdiner-byte2-explore].
+
+2017-02-05 01:34:38,195 WARNING  root            Creating an app for a project is irreversible.
+
+2017-02-05 01:34:41,307 INFO     ___FILE_ONLY___ Creating App Engine application in project [jdiner-byte2-explore] and region [us-east1]....
+2017-02-05 01:34:41,959 DEBUG    root            Received operation: [apps/jdiner-byte2-explore/operations/ac9fd704-029f-4c06-a14a-2b6d6cafbfac]
+2017-02-05 01:34:42,025 DEBUG    root            Operation [apps/jdiner-byte2-explore/operations/ac9fd704-029f-4c06-a14a-2b6d6cafbfac] not complete. Waiting 5s.
+2017-02-05 01:34:47,099 DEBUG    root            Operation [apps/jdiner-byte2-explore/operations/ac9fd704-029f-4c06-a14a-2b6d6cafbfac] not complete. Waiting 5s.
+2017-02-05 01:34:52,165 DEBUG    root            Operation [apps/jdiner-byte2-explore/operations/ac9fd704-029f-4c06-a14a-2b6d6cafbfac] not complete. Waiting 5s.
+2017-02-05 01:34:57,298 DEBUG    root            Operation [apps/jdiner-byte2-explore/operations/ac9fd704-029f-4c06-a14a-2b6d6cafbfac] complete. Result: {
+    "response": {
+        "locationId": "us-east1", 
+        "@type": "type.googleapis.com/google.appengine.v1.Application", 
+        "id": "jdiner-byte2-explore"
+    }, 
+    "done": true, 
+    "name": "apps/jdiner-byte2-explore/operations/ac9fd704-029f-4c06-a14a-2b6d6cafbfac", 
+    "metadata": {
+        "target": "apps/jdiner-byte2-explore", 
+        "method": "google.appengine.v1.Applications.CreateApplication", 
+        "user": "jamdin@gmail.com", 
+        "insertTime": "2017-02-05T06:34:41.535Z", 
+        "ephemeralMessage": "Now processing operation: ac9fd704-029f-4c06-a14a-2b6d6cafbfac", 
+        "endTime": "2017-02-05T06:34:56.114Z", 
+        "@type": "type.googleapis.com/google.appengine.v1.OperationMetadataV1"
+    }
+}
+2017-02-05 01:34:57,300 INFO     ___FILE_ONLY___ Success! The app is now created. Please use `gcloud app deploy` to deploy your first app.
+
+2017-02-05 01:34:57,300 INFO     root            Display format "none".
+2017-02-05 01:34:57,301 DEBUG    root            SDK update checks are disabled.
+2017-02-05 01:34:57,340 DEBUG    root            Metrics reporting process started...

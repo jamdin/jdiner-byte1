@@ -755,6 +755,11 @@
       "outline": {
         "outlineProvider": "orion.webtools.html.outliner"
       }
+    },
+    "languageTools": {
+      "quickfix": {
+        "quote.fix": true
+      }
     }
   }
 }

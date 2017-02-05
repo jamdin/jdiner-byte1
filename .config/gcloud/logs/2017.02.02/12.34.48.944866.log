@@ -1,0 +1,19 @@
+2017-02-02 12:34:48,946 DEBUG    root            Loaded Command Group: ['gcloud', 'app']
+2017-02-02 12:34:49,063 DEBUG    root            Loaded Command Group: ['gcloud', 'app', 'deploy']
+2017-02-02 12:34:49,606 DEBUG    root            Running gcloud.app.deploy with Namespace(__calliope_internal_deepest_parser=ArgumentParser(prog='gcloud.app.deploy', usage=None, description='Deploy the local code and/or configuration of your app to App Engine.', version=None, formatter_class=<class 'argparse.HelpFormatter'>, conflict_handler='error', add_help=False), account=None, authority_selector=None, authorization_token_file=None, bucket=None, calliope_command=<googlecloudsdk.calliope.backend.Command object at 0x7f1af59c9cd0>, command_path=['gcloud', 'app', 'deploy'], configuration=None, credential_file_override=None, deployables=[], docker_build=None, document=None, flatten=None, format=None, h=None, help=None, http_timeout=None, ignore_bad_certs=False, image_url=None, log_http=None, project=None, promote=None, quiet=None, server=None, skip_image_url_validation=False, skip_staging=False, stop_previous_version=None, trace_email=None, trace_log=None, trace_token=None, user_output_enabled=None, verbosity='warning', version=None).
+2017-02-02 12:34:49,615 ERROR    root            The [application] field is specified in file [/home/jamdin/src/jdiner-explore-working/app.yaml]. This field is not used by gcloud and must be removed. Project name should instead be specified either by `gcloud config set project MY_PROJECT` or by setting the `--project` flag on individual command executions.
+2017-02-02 12:34:49,615 DEBUG    root            (gcloud.app.deploy) Errors occurred while parsing the App Engine app configuration.
+Traceback (most recent call last):
+  File "/google/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 742, in Execute
+    resources = args.calliope_command.Run(cli=self, args=args)
+  File "/google/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 1710, in Run
+    resources = command_instance.Run(args)
+  File "/google/google-cloud-sdk/lib/surface/app/deploy.py", line 59, in Run
+    return deploy_util.RunDeploy(args)
+  File "/google/google-cloud-sdk/lib/googlecloudsdk/command_lib/app/deploy_util.py", line 354, in RunDeploy
+    app_config = yaml_parsing.AppConfigSet([yaml_path])
+  File "/google/google-cloud-sdk/lib/googlecloudsdk/api_lib/app/yaml_parsing.py", line 397, in __init__
+    raise AppConfigSetLoadError()
+AppConfigSetLoadError: Errors occurred while parsing the App Engine app configuration.
+2017-02-02 12:34:49,616 ERROR    root            (gcloud.app.deploy) Errors occurred while parsing the App Engine app configuration.
+2017-02-02 12:34:49,624 DEBUG    root            Metrics reporting process started...

@@ -1,0 +1,301 @@
+2017-02-05 01:35:19,187 DEBUG    root            Loaded Command Group: ['gcloud', 'app']
+2017-02-05 01:35:20,184 DEBUG    root            Loaded Command Group: ['gcloud', 'app', 'deploy']
+2017-02-05 01:35:20,187 DEBUG    root            Running gcloud.app.deploy with Namespace(__calliope_internal_deepest_parser=ArgumentParser(prog='gcloud.app.deploy', usage=None, description='Deploy the local code and/or configuration of your app to App Engine.', version=None, formatter_class=<class 'argparse.HelpFormatter'>, conflict_handler='error', add_help=False), account=None, authority_selector=None, authorization_token_file=None, bucket=None, calliope_command=<googlecloudsdk.calliope.backend.Command object at 0x7f97ff5a5d10>, command_path=['gcloud', 'app', 'deploy'], configuration=None, credential_file_override=None, deployables=['app.yaml'], docker_build=None, document=None, flatten=None, format=None, h=None, help=None, http_timeout=None, ignore_bad_certs=False, image_url=None, log_http=None, project='jdiner-byte2-explore', promote=None, quiet=None, server=None, skip_image_url_validation=False, skip_staging=False, stop_previous_version=None, trace_email=None, trace_log=None, trace_token=None, user_output_enabled=None, verbosity='warning', version=None).
+2017-02-05 01:35:20,431 DEBUG    root            API endpoint: [https://appengine.googleapis.com/], API version: [v1]
+2017-02-05 01:35:20,613 INFO     ___FILE_ONLY___ You are about to deploy the following services:
+
+2017-02-05 01:35:20,613 INFO     ___FILE_ONLY___  - jdiner-byte2-explore/default/20170205t013520 (from [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/app.yaml])
+     Deploying to URL: [https://jdiner-byte2-explore.appspot.com]
+
+
+2017-02-05 01:35:23,656 DEBUG    root            No bucket specified, retrieving default bucket.
+2017-02-05 01:35:23,658 DEBUG    root            Using bucket [gs://staging.jdiner-byte2-explore.appspot.com].
+2017-02-05 01:35:23,761 INFO     ___FILE_ONLY___ Beginning deployment of service [default]...
+
+2017-02-05 01:35:23,761 DEBUG    root            No staging command found for runtime [python27] and environment [STANDARD].
+2017-02-05 01:35:23,764 INFO     root            Ignoring directory [.git]: Directory matches ignore regex.
+2017-02-05 01:35:23,764 INFO     root            Ignoring file [.playground]: File matches ignore regex.
+2017-02-05 01:35:23,764 INFO     root            Ignoring file [appengine_config.pyc]: File matches ignore regex.
+2017-02-05 01:35:23,764 INFO     root            Ignoring file [main.pyc]: File matches ignore regex.
+2017-02-05 01:35:23,764 INFO     root            Ignoring file [vendor.pyc]: File matches ignore regex.
+2017-02-05 01:35:23,765 INFO     root            Ignoring file [lib/itsdangerous.pyc]: File matches ignore regex.
+2017-02-05 01:35:23,765 INFO     root            Ignoring file [lib/werkzeug/__init__.pyc]: File matches ignore regex.
+2017-02-05 01:35:23,765 INFO     root            Ignoring file [lib/werkzeug/_compat.pyc]: File matches ignore regex.
+2017-02-05 01:35:23,765 INFO     root            Ignoring file [lib/werkzeug/_internal.pyc]: File matches ignore regex.
+2017-02-05 01:35:23,765 INFO     root            Ignoring file [lib/werkzeug/datastructures.pyc]: File matches ignore regex.
+2017-02-05 01:35:23,765 INFO     root            Ignoring file [lib/werkzeug/exceptions.pyc]: File matches ignore regex.
+2017-02-05 01:35:23,766 INFO     root            Ignoring file [lib/werkzeug/formparser.pyc]: File matches ignore regex.
+2017-02-05 01:35:23,766 INFO     root            Ignoring file [lib/werkzeug/http.pyc]: File matches ignore regex.
+2017-02-05 01:35:23,766 INFO     root            Ignoring file [lib/werkzeug/local.pyc]: File matches ignore regex.
+2017-02-05 01:35:23,766 INFO     root            Ignoring file [lib/werkzeug/routing.pyc]: File matches ignore regex.
+2017-02-05 01:35:23,767 INFO     root            Ignoring file [lib/werkzeug/urls.pyc]: File matches ignore regex.
+2017-02-05 01:35:23,767 INFO     root            Ignoring file [lib/werkzeug/utils.pyc]: File matches ignore regex.
+2017-02-05 01:35:23,767 INFO     root            Ignoring file [lib/werkzeug/wrappers.pyc]: File matches ignore regex.
+2017-02-05 01:35:23,767 INFO     root            Ignoring file [lib/werkzeug/wsgi.pyc]: File matches ignore regex.
+2017-02-05 01:35:23,769 INFO     root            Ignoring file [lib/flask/__init__.pyc]: File matches ignore regex.
+2017-02-05 01:35:23,769 INFO     root            Ignoring file [lib/flask/_compat.pyc]: File matches ignore regex.
+2017-02-05 01:35:23,769 INFO     root            Ignoring file [lib/flask/app.pyc]: File matches ignore regex.
+2017-02-05 01:35:23,769 INFO     root            Ignoring file [lib/flask/blueprints.pyc]: File matches ignore regex.
+2017-02-05 01:35:23,769 INFO     root            Ignoring file [lib/flask/config.pyc]: File matches ignore regex.
+2017-02-05 01:35:23,770 INFO     root            Ignoring file [lib/flask/ctx.pyc]: File matches ignore regex.
+2017-02-05 01:35:23,770 INFO     root            Ignoring file [lib/flask/debughelpers.pyc]: File matches ignore regex.
+2017-02-05 01:35:23,770 INFO     root            Ignoring file [lib/flask/globals.pyc]: File matches ignore regex.
+2017-02-05 01:35:23,770 INFO     root            Ignoring file [lib/flask/helpers.pyc]: File matches ignore regex.
+2017-02-05 01:35:23,770 INFO     root            Ignoring file [lib/flask/json.pyc]: File matches ignore regex.
+2017-02-05 01:35:23,770 INFO     root            Ignoring file [lib/flask/module.pyc]: File matches ignore regex.
+2017-02-05 01:35:23,770 INFO     root            Ignoring file [lib/flask/sessions.pyc]: File matches ignore regex.
+2017-02-05 01:35:23,770 INFO     root            Ignoring file [lib/flask/signals.pyc]: File matches ignore regex.
+2017-02-05 01:35:23,771 INFO     root            Ignoring file [lib/flask/templating.pyc]: File matches ignore regex.
+2017-02-05 01:35:23,771 INFO     root            Ignoring file [lib/flask/wrappers.pyc]: File matches ignore regex.
+2017-02-05 01:35:23,771 INFO     ___FILE_ONLY___ Some files were skipped. Pass `--verbosity=info` to see which ones.
+
+2017-02-05 01:35:23,771 INFO     ___FILE_ONLY___ You may also view the gcloud log file, found at
+[/home/jamdin/.config/gcloud/logs/2017.02.05/01.35.19.185979.log].
+
+2017-02-05 01:35:24,028 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/flask/debughelpers.py] to [03d73e59839182a4dec92737da1ebdfe3161eaa5]
+2017-02-05 01:35:24,032 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/contrib/cache.py] to [04d99c9b666ca076644938a53ff5939a0994cf30]
+2017-02-05 01:35:24,036 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/debug/shared/less.png] to [05fa17be5c04da88403c762ceedbe4c7fcf4d3c1]
+2017-02-05 01:35:24,040 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/_internal.py] to [06436c233c36bddbbb5a47266266898abba6fbf9]
+2017-02-05 01:35:24,044 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/flask/_compat.py] to [1714534079ea6e8ee0d6423bb76f55884349b96a]
+2017-02-05 01:35:24,048 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/CONTRIB.md] to [1d0f1045f9be02fed316874fed540ae9b57e3a6c]
+2017-02-05 01:35:24,052 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/serving.py] to [1d5b7f0bec068c7f68dc39945234f40db958174c]
+2017-02-05 01:35:24,056 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/app.yaml] to [1e26bb8e67041f79ee7a06c20d80cca3dd603d15]
+2017-02-05 01:35:24,060 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/debug/__init__.py] to [1fc07626e58f9f5e4c1b6813a2f361f917262c2f]
+2017-02-05 01:35:24,064 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/debug/shared/style.css] to [1ff665b947652de64bb310aebf3c34c7b1644bce]
+2017-02-05 01:35:24,068 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/http.py] to [217decbcd915b5e8be0ba7dd2c54440f15f1d4ca]
+2017-02-05 01:35:24,072 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/flask/wrappers.py] to [21de0d089a41e02f206b9afc7219e51800883702]
+2017-02-05 01:35:24,076 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/debug/tbtools.py] to [2bd4bef345a8b546eea40cc4f4625c188e784e33]
+2017-02-05 01:35:24,081 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/requirements.txt] to [2d50ce41c510c3bfd2c9b2324a3d659b762374a8]
+2017-02-05 01:35:24,084 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/debug/shared/more.png] to [2fcdfaffbdebe20dd570dca43380e647e964f1be]
+2017-02-05 01:35:24,092 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/flask/config.py] to [36139ebe9838b8b2334a776af924b32e20fdcd8f]
+2017-02-05 01:35:24,097 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/debug/console.py] to [38d3d1d61a980a98c5dc3e3212b74ac4c0e17aca]
+2017-02-05 01:35:24,100 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/main.py] to [3e91c52628f4944f5fee7c92f1d19e994663e0e3]
+2017-02-05 01:35:24,105 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/main.py] to [3e91c52628f4944f5fee7c92f1d19e994663e0e3]
+2017-02-05 01:35:24,109 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/test.py] to [419f6c60579630077c3b3ab409780cd40a7634f5]
+2017-02-05 01:35:24,113 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/local.py] to [4512b397886ad3dba1c85bd021f08bdba8f3ce16]
+2017-02-05 01:35:24,116 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/flask/blueprints.py] to [4775c37f750377445635708a55cc0e7b261f4c74]
+2017-02-05 01:35:24,121 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/formparser.py] to [4cf1a51fa75c224898886d0cac08897841efdfd6]
+2017-02-05 01:35:24,124 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/flask/signals.py] to [4e13c2719d4beba3995dd90cc07abaf6521bca6f]
+2017-02-05 01:35:24,126 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/README.md] to [01f98f9bb14194ec85f4358461f5438473a9c29c]
+2017-02-05 01:35:24,130 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/README.md] to [01f98f9bb14194ec85f4358461f5438473a9c29c]
+2017-02-05 01:35:24,132 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/debug/shared/console.png] to [5000245ec6c0156e78d26306e13081ae5d395136]
+2017-02-05 01:35:24,136 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/contrib/profiler.py] to [501a8e8700cc455704477e6d2e30948019d03485]
+2017-02-05 01:35:24,140 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/contrib/iterio.py] to [58d90dee794f0e8b180af637039dda818ec498d3]
+2017-02-05 01:35:24,144 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/script.py] to [5abeecd5d6d5a0d163ed6dd4bb2c4381de8d9f93]
+2017-02-05 01:35:24,149 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/wrappers.py] to [5b05ea80164760d74c7e60d3ebe19097143f7b41]
+2017-02-05 01:35:24,152 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/contrib/jsrouting.py] to [6b3dfc914e0c3d8f635a01b6fd161966298f7909]
+2017-02-05 01:35:24,102 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/posixemulation.py] to [317dad90c788826f6d3a30159819a2e8ffbfb07b]
+2017-02-05 01:35:24,088 DEBUG    root            Uploading [/tmp/tmpfiN0LS/source-context.json] to [24ed968a64680ad95cec7406e05d9f7b3b061cb4]
+2017-02-05 01:35:24,164 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/wrappers.py] to [5b05ea80164760d74c7e60d3ebe19097143f7b41]
+2017-02-05 01:35:24,167 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/local.py] to [4512b397886ad3dba1c85bd021f08bdba8f3ce16]
+2017-02-05 01:35:24,171 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/flask/signals.py] to [4e13c2719d4beba3995dd90cc07abaf6521bca6f]
+2017-02-05 01:35:24,175 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/debug/tbtools.py] to [2bd4bef345a8b546eea40cc4f4625c188e784e33]
+2017-02-05 01:35:24,179 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/http.py] to [217decbcd915b5e8be0ba7dd2c54440f15f1d4ca]
+2017-02-05 01:35:24,181 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/flask/debughelpers.py] to [03d73e59839182a4dec92737da1ebdfe3161eaa5]
+2017-02-05 01:35:24,184 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/debug/shared/more.png] to [2fcdfaffbdebe20dd570dca43380e647e964f1be]
+2017-02-05 01:35:24,188 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/debug/shared/less.png] to [05fa17be5c04da88403c762ceedbe4c7fcf4d3c1]
+2017-02-05 01:35:24,192 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/contrib/profiler.py] to [501a8e8700cc455704477e6d2e30948019d03485]
+2017-02-05 01:35:24,194 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/serving.py] to [1d5b7f0bec068c7f68dc39945234f40db958174c]
+2017-02-05 01:35:24,195 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/contrib/jsrouting.py] to [6b3dfc914e0c3d8f635a01b6fd161966298f7909]
+2017-02-05 01:35:24,197 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/contrib/iterio.py] to [58d90dee794f0e8b180af637039dda818ec498d3]
+2017-02-05 01:35:24,199 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/flask/_compat.py] to [1714534079ea6e8ee0d6423bb76f55884349b96a]
+2017-02-05 01:35:24,201 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/debug/shared/style.css] to [1ff665b947652de64bb310aebf3c34c7b1644bce]
+2017-02-05 01:35:24,203 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/debug/console.py] to [38d3d1d61a980a98c5dc3e3212b74ac4c0e17aca]
+2017-02-05 01:35:24,205 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/CONTRIB.md] to [1d0f1045f9be02fed316874fed540ae9b57e3a6c]
+2017-02-05 01:35:24,205 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/debug/__init__.py] to [1fc07626e58f9f5e4c1b6813a2f361f917262c2f]
+2017-02-05 01:35:24,208 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/formparser.py] to [4cf1a51fa75c224898886d0cac08897841efdfd6]
+2017-02-05 01:35:24,212 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/script.py] to [5abeecd5d6d5a0d163ed6dd4bb2c4381de8d9f93]
+2017-02-05 01:35:24,213 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/contrib/cache.py] to [04d99c9b666ca076644938a53ff5939a0994cf30]
+2017-02-05 01:35:24,216 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/posixemulation.py] to [317dad90c788826f6d3a30159819a2e8ffbfb07b]
+2017-02-05 01:35:24,217 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/flask/blueprints.py] to [4775c37f750377445635708a55cc0e7b261f4c74]
+2017-02-05 01:35:24,218 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/debug/shared/console.png] to [5000245ec6c0156e78d26306e13081ae5d395136]
+2017-02-05 01:35:24,220 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/flask/config.py] to [36139ebe9838b8b2334a776af924b32e20fdcd8f]
+2017-02-05 01:35:24,220 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/_internal.py] to [06436c233c36bddbbb5a47266266898abba6fbf9]
+2017-02-05 01:35:24,190 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/app.yaml] to [1e26bb8e67041f79ee7a06c20d80cca3dd603d15]
+2017-02-05 01:35:24,214 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/flask/wrappers.py] to [21de0d089a41e02f206b9afc7219e51800883702]
+2017-02-05 01:35:24,226 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/requirements.txt] to [2d50ce41c510c3bfd2c9b2324a3d659b762374a8]
+2017-02-05 01:35:24,287 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/test.py] to [419f6c60579630077c3b3ab409780cd40a7634f5]
+2017-02-05 01:35:24,229 INFO     root            Uploading [/tmp/tmpfiN0LS/source-context.json] to [24ed968a64680ad95cec7406e05d9f7b3b061cb4]
+2017-02-05 01:35:24,664 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/flask/helpers.py] to [6e2bf950520146111f46de40facb840483db9782]
+2017-02-05 01:35:24,664 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/flask/helpers.py] to [6e2bf950520146111f46de40facb840483db9782]
+2017-02-05 01:35:24,672 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/utils.py] to [6ee150b7c3197c4beb57c4340d64a9252203ae05]
+2017-02-05 01:35:24,672 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/utils.py] to [6ee150b7c3197c4beb57c4340d64a9252203ae05]
+2017-02-05 01:35:24,675 DEBUG    root            Uploading [/tmp/tmpfiN0LS/source-contexts.json] to [7a5710cf0232fbf8e823abfe382209e552e5bc37]
+2017-02-05 01:35:24,675 INFO     root            Uploading [/tmp/tmpfiN0LS/source-contexts.json] to [7a5710cf0232fbf8e823abfe382209e552e5bc37]
+2017-02-05 01:35:24,677 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/flask/exthook.py] to [7aa2c9a56b1e7b947dd5a93e4e8b24261764a041]
+2017-02-05 01:35:24,677 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/flask/exthook.py] to [7aa2c9a56b1e7b947dd5a93e4e8b24261764a041]
+2017-02-05 01:35:24,679 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/itsdangerous.py] to [7b2c0b103ce9e15453a9d1e1774e41ccecb99bc3]
+2017-02-05 01:35:24,679 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/itsdangerous.py] to [7b2c0b103ce9e15453a9d1e1774e41ccecb99bc3]
+2017-02-05 01:35:24,683 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/LICENSE] to [7df059597099bb7dcf25d2a9aedfaf4465f72d8d]
+2017-02-05 01:35:24,683 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/LICENSE] to [7df059597099bb7dcf25d2a9aedfaf4465f72d8d]
+2017-02-05 01:35:24,687 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/contrib/limiter.py] to [7fefc26a08b24a6d42ac4e5b0ed607a7c9c13ddb]
+2017-02-05 01:35:24,687 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/contrib/limiter.py] to [7fefc26a08b24a6d42ac4e5b0ed607a7c9c13ddb]
+2017-02-05 01:35:24,691 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/contrib/sessions.py] to [889a62d323406ad32efb2c2647544628db8ddcb8]
+2017-02-05 01:35:24,691 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/contrib/sessions.py] to [889a62d323406ad32efb2c2647544628db8ddcb8]
+2017-02-05 01:35:24,694 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/wsgi.py] to [83bdc4f0e090502bcbcecc3f3c2101c1d7301203]
+2017-02-05 01:35:24,695 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/wsgi.py] to [83bdc4f0e090502bcbcecc3f3c2101c1d7301203]
+2017-02-05 01:35:24,698 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/debug/shared/FONT_LICENSE] to [81e5605d07c08e95048556f1795931cc038d01e6]
+2017-02-05 01:35:24,698 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/datastructures.py] to [6f55b0d833e9929088ebbab32e9fe6eac89246e1]
+2017-02-05 01:35:24,698 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/datastructures.py] to [6f55b0d833e9929088ebbab32e9fe6eac89246e1]
+2017-02-05 01:35:24,704 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/flask/app.py] to [8d168dad1daa252360961505066a832a98f7c996]
+2017-02-05 01:35:24,704 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/flask/app.py] to [8d168dad1daa252360961505066a832a98f7c996]
+2017-02-05 01:35:24,706 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/debug/shared/FONT_LICENSE] to [81e5605d07c08e95048556f1795931cc038d01e6]
+2017-02-05 01:35:24,711 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/flask/templating.py] to [93e0ec6e6a61c105407c8dfcef470981fb54f3f4]
+2017-02-05 01:35:24,711 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/flask/templating.py] to [93e0ec6e6a61c105407c8dfcef470981fb54f3f4]
+2017-02-05 01:35:24,715 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/flask/logging.py] to [9be1d2842ba6d57ba799571edec836e12b6c3650]
+2017-02-05 01:35:24,715 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/flask/logging.py] to [9be1d2842ba6d57ba799571edec836e12b6c3650]
+2017-02-05 01:35:24,719 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/debug/shared/source.png] to [a55f11f670f848b13e33bf726541d99225b28919]
+2017-02-05 01:35:24,719 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/debug/shared/source.png] to [a55f11f670f848b13e33bf726541d99225b28919]
+2017-02-05 01:35:24,723 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/contrib/lint.py] to [a75595b57fa38a624790d132280ac27e24bd18d0]
+2017-02-05 01:35:24,724 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/vendor.py] to [932188abe8638bd9eff05f5a09e0b945c947a854]
+2017-02-05 01:35:24,724 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/vendor.py] to [932188abe8638bd9eff05f5a09e0b945c947a854]
+2017-02-05 01:35:24,724 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/exceptions.py] to [9f64865f007c5f344f3caeb28fc758f02b817256]
+2017-02-05 01:35:24,725 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/exceptions.py] to [9f64865f007c5f344f3caeb28fc758f02b817256]
+2017-02-05 01:35:24,726 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/flask/module.py] to [a74038fee84273912601cc1dac7dc24a14aace81]
+2017-02-05 01:35:24,726 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/flask/module.py] to [a74038fee84273912601cc1dac7dc24a14aace81]
+2017-02-05 01:35:24,729 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/flask/globals.py] to [b2ef11d2e652e3137b96c0bf917715c5e6781a22]
+2017-02-05 01:35:24,729 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/flask/globals.py] to [b2ef11d2e652e3137b96c0bf917715c5e6781a22]
+2017-02-05 01:35:24,731 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/flask/ext/__init__.py] to [b465d2b3e7d2e6e9bc642604458bd70cfa9f498a]
+2017-02-05 01:35:24,731 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/flask/ext/__init__.py] to [b465d2b3e7d2e6e9bc642604458bd70cfa9f498a]
+2017-02-05 01:35:24,737 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/flask/__init__.py] to [b7669ad927834d83de3e100e340b6576a2f80837]
+2017-02-05 01:35:24,739 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/__init__.py] to [b96c3871168d3dab60c62958815f0d56a677d8c7]
+2017-02-05 01:35:24,739 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/__init__.py] to [b96c3871168d3dab60c62958815f0d56a677d8c7]
+2017-02-05 01:35:24,741 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/contrib/__init__.py] to [964bb945677cd30e53327cf7709830e0300e7a1f]
+2017-02-05 01:35:24,742 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/contrib/__init__.py] to [964bb945677cd30e53327cf7709830e0300e7a1f]
+2017-02-05 01:35:24,743 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/appengine_config.py] to [bab14286fce1f2fb6ac7977142df04b79c875ddb]
+2017-02-05 01:35:24,743 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/appengine_config.py] to [bab14286fce1f2fb6ac7977142df04b79c875ddb]
+2017-02-05 01:35:24,746 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/debug/shared/jquery.js] to [b75990598ee8d3895448ed9d08726af63109f842]
+2017-02-05 01:35:24,746 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/debug/shared/jquery.js] to [b75990598ee8d3895448ed9d08726af63109f842]
+2017-02-05 01:35:24,751 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/urls.py] to [bf798f3cbeb509415e1a42a3baa457084986bf9a]
+2017-02-05 01:35:24,751 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/urls.py] to [bf798f3cbeb509415e1a42a3baa457084986bf9a]
+2017-02-05 01:35:24,753 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/contrib/lint.py] to [a75595b57fa38a624790d132280ac27e24bd18d0]
+2017-02-05 01:35:24,763 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/contrib/securecookie.py] to [ca29a548709863828a451aa6a2669a15078884c3]
+2017-02-05 01:35:24,763 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/contrib/securecookie.py] to [ca29a548709863828a451aa6a2669a15078884c3]
+2017-02-05 01:35:24,768 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/_compat.py] to [cb7d9ae3d20e2b50e7ecba6b020519f14066e5d1]
+2017-02-05 01:35:24,768 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/_compat.py] to [cb7d9ae3d20e2b50e7ecba6b020519f14066e5d1]
+2017-02-05 01:35:24,738 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/flask/__init__.py] to [b7669ad927834d83de3e100e340b6576a2f80837]
+2017-02-05 01:35:24,886 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/security.py] to [cc6a94d5777b1f1dcb1d59fb3f1abc573b07d658]
+2017-02-05 01:35:24,913 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/security.py] to [cc6a94d5777b1f1dcb1d59fb3f1abc573b07d658]
+2017-02-05 01:35:24,941 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/contrib/atom.py] to [ccf034500c3919bcbe0022967abae0c78d09e6a4]
+2017-02-05 01:35:24,941 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/contrib/atom.py] to [ccf034500c3919bcbe0022967abae0c78d09e6a4]
+2017-02-05 01:35:24,943 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/debug/shared/ubuntu.ttf] to [d330f0c9bfb5592be02c62d49c27ac26cd7070f9]
+2017-02-05 01:35:24,943 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/debug/shared/ubuntu.ttf] to [d330f0c9bfb5592be02c62d49c27ac26cd7070f9]
+2017-02-05 01:35:24,999 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/flask/sessions.py] to [d8ac56a1412aad5669b1964bcb3cb574a2c41c61]
+2017-02-05 01:35:24,999 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/flask/sessions.py] to [d8ac56a1412aad5669b1964bcb3cb574a2c41c61]
+2017-02-05 01:35:25,004 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/flask/testing.py] to [da8dca579a616f9548a07b9bdbd51dae358f899e]
+2017-02-05 01:35:25,005 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/flask/testing.py] to [da8dca579a616f9548a07b9bdbd51dae358f899e]
+2017-02-05 01:35:25,016 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/flask/ctx.py] to [e433758760138f2e263fb27597e182d014a4d4a2]
+2017-02-05 01:35:25,016 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/flask/ctx.py] to [e433758760138f2e263fb27597e182d014a4d4a2]
+2017-02-05 01:35:25,027 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/debug/repr.py] to [f460f4473d43f561be5ec30a6646970bfd80fa57]
+2017-02-05 01:35:25,028 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/debug/repr.py] to [f460f4473d43f561be5ec30a6646970bfd80fa57]
+2017-02-05 01:35:25,032 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/flask/views.py] to [f64942375194d02a7d6f103099a89c7365bdd245]
+2017-02-05 01:35:25,033 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/flask/views.py] to [f64942375194d02a7d6f103099a89c7365bdd245]
+2017-02-05 01:35:25,037 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/contrib/fixers.py] to [f72f033067fb569efc9c778471a15d440c9889de]
+2017-02-05 01:35:25,037 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/contrib/fixers.py] to [f72f033067fb569efc9c778471a15d440c9889de]
+2017-02-05 01:35:25,039 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/flask/json.py] to [f98496c13afc39a15f7e00733376d20b6a12d935]
+2017-02-05 01:35:25,039 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/flask/json.py] to [f98496c13afc39a15f7e00733376d20b6a12d935]
+2017-02-05 01:35:25,048 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/testapp.py] to [fe1c100807139515c5275196916ff96baca0b580]
+2017-02-05 01:35:25,048 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/testapp.py] to [fe1c100807139515c5275196916ff96baca0b580]
+2017-02-05 01:35:25,056 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/useragents.py] to [f28d11c5698efd6e00c3a9049786cd7c9bd61dc8]
+2017-02-05 01:35:25,056 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/useragents.py] to [f28d11c5698efd6e00c3a9049786cd7c9bd61dc8]
+2017-02-05 01:35:25,059 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/contrib/testtools.py] to [fe287052b9fc8366e3013efd121c4229b72660aa]
+2017-02-05 01:35:25,059 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/contrib/testtools.py] to [fe287052b9fc8366e3013efd121c4229b72660aa]
+2017-02-05 01:35:25,061 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/debug/shared/debugger.js] to [f3eb281df3843b9e36643652ced56f322e3fb965]
+2017-02-05 01:35:25,061 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/debug/shared/debugger.js] to [f3eb281df3843b9e36643652ced56f322e3fb965]
+2017-02-05 01:35:25,062 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/contrib/wrappers.py] to [eefc6738118d65a46c39d20a21b5428202efdf19]
+2017-02-05 01:35:25,062 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/contrib/wrappers.py] to [eefc6738118d65a46c39d20a21b5428202efdf19]
+2017-02-05 01:35:25,066 DEBUG    root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/routing.py] to [fc0ac4e5583a48b945a645700246c0f2df6ea28d]
+2017-02-05 01:35:25,066 INFO     root            Uploading [/home/jamdin/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a/lib/werkzeug/routing.py] to [fc0ac4e5583a48b945a645700246c0f2df6ea28d]
+2017-02-05 01:35:25,657 INFO     ___FILE_ONLY___ File upload done.
+
+2017-02-05 01:35:25,658 INFO     root            Manifest: [{'lib/flask/signals.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/4e13c2719d4beba3995dd90cc07abaf6521bca6f', 'sha1Sum': '4e13c2719d4beba3995dd90cc07abaf6521bca6f'}, 'lib/flask/ext/__init__.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/b465d2b3e7d2e6e9bc642604458bd70cfa9f498a', 'sha1Sum': 'b465d2b3e7d2e6e9bc642604458bd70cfa9f498a'}, 'lib/flask/config.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/36139ebe9838b8b2334a776af924b32e20fdcd8f', 'sha1Sum': '36139ebe9838b8b2334a776af924b32e20fdcd8f'}, 'lib/werkzeug/contrib/wrappers.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/eefc6738118d65a46c39d20a21b5428202efdf19', 'sha1Sum': 'eefc6738118d65a46c39d20a21b5428202efdf19'}, 'LICENSE': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/7df059597099bb7dcf25d2a9aedfaf4465f72d8d', 'sha1Sum': '7df059597099bb7dcf25d2a9aedfaf4465f72d8d'}, 'lib/werkzeug/formparser.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/4cf1a51fa75c224898886d0cac08897841efdfd6', 'sha1Sum': '4cf1a51fa75c224898886d0cac08897841efdfd6'}, 'lib/werkzeug/contrib/limiter.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/7fefc26a08b24a6d42ac4e5b0ed607a7c9c13ddb', 'sha1Sum': '7fefc26a08b24a6d42ac4e5b0ed607a7c9c13ddb'}, 'lib/werkzeug/debug/__init__.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/1fc07626e58f9f5e4c1b6813a2f361f917262c2f', 'sha1Sum': '1fc07626e58f9f5e4c1b6813a2f361f917262c2f'}, 'CONTRIB.md': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/1d0f1045f9be02fed316874fed540ae9b57e3a6c', 'sha1Sum': '1d0f1045f9be02fed316874fed540ae9b57e3a6c'}, 'lib/werkzeug/debug/shared/less.png': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/05fa17be5c04da88403c762ceedbe4c7fcf4d3c1', 'sha1Sum': '05fa17be5c04da88403c762ceedbe4c7fcf4d3c1'}, 'lib/werkzeug/http.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/217decbcd915b5e8be0ba7dd2c54440f15f1d4ca', 'sha1Sum': '217decbcd915b5e8be0ba7dd2c54440f15f1d4ca'}, 'lib/werkzeug/debug/shared/debugger.js': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/f3eb281df3843b9e36643652ced56f322e3fb965', 'sha1Sum': 'f3eb281df3843b9e36643652ced56f322e3fb965'}, 'lib/itsdangerous.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/7b2c0b103ce9e15453a9d1e1774e41ccecb99bc3', 'sha1Sum': '7b2c0b103ce9e15453a9d1e1774e41ccecb99bc3'}, 'lib/flask/exthook.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/7aa2c9a56b1e7b947dd5a93e4e8b24261764a041', 'sha1Sum': '7aa2c9a56b1e7b947dd5a93e4e8b24261764a041'}, 'app.yaml': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/1e26bb8e67041f79ee7a06c20d80cca3dd603d15', 'sha1Sum': '1e26bb8e67041f79ee7a06c20d80cca3dd603d15'}, 'lib/werkzeug/useragents.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/f28d11c5698efd6e00c3a9049786cd7c9bd61dc8', 'sha1Sum': 'f28d11c5698efd6e00c3a9049786cd7c9bd61dc8'}, 'appengine_config.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/bab14286fce1f2fb6ac7977142df04b79c875ddb', 'sha1Sum': 'bab14286fce1f2fb6ac7977142df04b79c875ddb'}, 'lib/flask/helpers.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/6e2bf950520146111f46de40facb840483db9782', 'sha1Sum': '6e2bf950520146111f46de40facb840483db9782'}, 'source-context.json': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/24ed968a64680ad95cec7406e05d9f7b3b061cb4', 'sha1Sum': '24ed968a64680ad95cec7406e05d9f7b3b061cb4'}, 'lib/werkzeug/test.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/419f6c60579630077c3b3ab409780cd40a7634f5', 'sha1Sum': '419f6c60579630077c3b3ab409780cd40a7634f5'}, 'lib/werkzeug/debug/shared/more.png': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/2fcdfaffbdebe20dd570dca43380e647e964f1be', 'sha1Sum': '2fcdfaffbdebe20dd570dca43380e647e964f1be'}, 'lib/werkzeug/exceptions.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/9f64865f007c5f344f3caeb28fc758f02b817256', 'sha1Sum': '9f64865f007c5f344f3caeb28fc758f02b817256'}, 'lib/werkzeug/contrib/jsrouting.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/6b3dfc914e0c3d8f635a01b6fd161966298f7909', 'sha1Sum': '6b3dfc914e0c3d8f635a01b6fd161966298f7909'}, 'lib/werkzeug/contrib/fixers.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/f72f033067fb569efc9c778471a15d440c9889de', 'sha1Sum': 'f72f033067fb569efc9c778471a15d440c9889de'}, 'vendor.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/932188abe8638bd9eff05f5a09e0b945c947a854', 'sha1Sum': '932188abe8638bd9eff05f5a09e0b945c947a854'}, 'lib/werkzeug/script.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/5abeecd5d6d5a0d163ed6dd4bb2c4381de8d9f93', 'sha1Sum': '5abeecd5d6d5a0d163ed6dd4bb2c4381de8d9f93'}, 'requirements.txt': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/2d50ce41c510c3bfd2c9b2324a3d659b762374a8', 'sha1Sum': '2d50ce41c510c3bfd2c9b2324a3d659b762374a8'}, 'lib/flask/views.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/f64942375194d02a7d6f103099a89c7365bdd245', 'sha1Sum': 'f64942375194d02a7d6f103099a89c7365bdd245'}, 'lib/werkzeug/datastructures.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/6f55b0d833e9929088ebbab32e9fe6eac89246e1', 'sha1Sum': '6f55b0d833e9929088ebbab32e9fe6eac89246e1'}, 'lib/flask/testing.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/da8dca579a616f9548a07b9bdbd51dae358f899e', 'sha1Sum': 'da8dca579a616f9548a07b9bdbd51dae358f899e'}, 'lib/flask/debughelpers.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/03d73e59839182a4dec92737da1ebdfe3161eaa5', 'sha1Sum': '03d73e59839182a4dec92737da1ebdfe3161eaa5'}, 'lib/werkzeug/serving.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/1d5b7f0bec068c7f68dc39945234f40db958174c', 'sha1Sum': '1d5b7f0bec068c7f68dc39945234f40db958174c'}, 'README.md': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/01f98f9bb14194ec85f4358461f5438473a9c29c', 'sha1Sum': '01f98f9bb14194ec85f4358461f5438473a9c29c'}, 'lib/werkzeug/wrappers.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/5b05ea80164760d74c7e60d3ebe19097143f7b41', 'sha1Sum': '5b05ea80164760d74c7e60d3ebe19097143f7b41'}, 'lib/werkzeug/contrib/securecookie.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/ca29a548709863828a451aa6a2669a15078884c3', 'sha1Sum': 'ca29a548709863828a451aa6a2669a15078884c3'}, 'lib/werkzeug/urls.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/bf798f3cbeb509415e1a42a3baa457084986bf9a', 'sha1Sum': 'bf798f3cbeb509415e1a42a3baa457084986bf9a'}, 'lib/werkzeug/debug/shared/console.png': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/5000245ec6c0156e78d26306e13081ae5d395136', 'sha1Sum': '5000245ec6c0156e78d26306e13081ae5d395136'}, 'lib/werkzeug/routing.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/fc0ac4e5583a48b945a645700246c0f2df6ea28d', 'sha1Sum': 'fc0ac4e5583a48b945a645700246c0f2df6ea28d'}, 'lib/flask/blueprints.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/4775c37f750377445635708a55cc0e7b261f4c74', 'sha1Sum': '4775c37f750377445635708a55cc0e7b261f4c74'}, 'lib/werkzeug/debug/shared/jquery.js': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/b75990598ee8d3895448ed9d08726af63109f842', 'sha1Sum': 'b75990598ee8d3895448ed9d08726af63109f842'}, 'lib/flask/module.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/a74038fee84273912601cc1dac7dc24a14aace81', 'sha1Sum': 'a74038fee84273912601cc1dac7dc24a14aace81'}, 'lib/werkzeug/_internal.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/06436c233c36bddbbb5a47266266898abba6fbf9', 'sha1Sum': '06436c233c36bddbbb5a47266266898abba6fbf9'}, 'lib/flask/app.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/8d168dad1daa252360961505066a832a98f7c996', 'sha1Sum': '8d168dad1daa252360961505066a832a98f7c996'}, 'lib/werkzeug/wsgi.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/83bdc4f0e090502bcbcecc3f3c2101c1d7301203', 'sha1Sum': '83bdc4f0e090502bcbcecc3f3c2101c1d7301203'}, 'lib/werkzeug/contrib/cache.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/04d99c9b666ca076644938a53ff5939a0994cf30', 'sha1Sum': '04d99c9b666ca076644938a53ff5939a0994cf30'}, 'lib/werkzeug/debug/shared/ubuntu.ttf': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/d330f0c9bfb5592be02c62d49c27ac26cd7070f9', 'sha1Sum': 'd330f0c9bfb5592be02c62d49c27ac26cd7070f9'}, 'lib/werkzeug/debug/console.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/38d3d1d61a980a98c5dc3e3212b74ac4c0e17aca', 'sha1Sum': '38d3d1d61a980a98c5dc3e3212b74ac4c0e17aca'}, 'lib/werkzeug/security.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/cc6a94d5777b1f1dcb1d59fb3f1abc573b07d658', 'sha1Sum': 'cc6a94d5777b1f1dcb1d59fb3f1abc573b07d658'}, 'lib/flask/sessions.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/d8ac56a1412aad5669b1964bcb3cb574a2c41c61', 'sha1Sum': 'd8ac56a1412aad5669b1964bcb3cb574a2c41c61'}, 'lib/flask/__init__.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/b7669ad927834d83de3e100e340b6576a2f80837', 'sha1Sum': 'b7669ad927834d83de3e100e340b6576a2f80837'}, 'lib/werkzeug/contrib/testtools.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/fe287052b9fc8366e3013efd121c4229b72660aa', 'sha1Sum': 'fe287052b9fc8366e3013efd121c4229b72660aa'}, 'lib/flask/globals.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/b2ef11d2e652e3137b96c0bf917715c5e6781a22', 'sha1Sum': 'b2ef11d2e652e3137b96c0bf917715c5e6781a22'}, 'lib/werkzeug/debug/shared/style.css': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/1ff665b947652de64bb310aebf3c34c7b1644bce', 'sha1Sum': '1ff665b947652de64bb310aebf3c34c7b1644bce'}, 'lib/flask/_compat.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/1714534079ea6e8ee0d6423bb76f55884349b96a', 'sha1Sum': '1714534079ea6e8ee0d6423bb76f55884349b96a'}, 'lib/werkzeug/utils.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/6ee150b7c3197c4beb57c4340d64a9252203ae05', 'sha1Sum': '6ee150b7c3197c4beb57c4340d64a9252203ae05'}, 'lib/werkzeug/contrib/lint.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/a75595b57fa38a624790d132280ac27e24bd18d0', 'sha1Sum': 'a75595b57fa38a624790d132280ac27e24bd18d0'}, 'lib/werkzeug/debug/shared/FONT_LICENSE': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/81e5605d07c08e95048556f1795931cc038d01e6', 'sha1Sum': '81e5605d07c08e95048556f1795931cc038d01e6'}, 'lib/werkzeug/contrib/iterio.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/58d90dee794f0e8b180af637039dda818ec498d3', 'sha1Sum': '58d90dee794f0e8b180af637039dda818ec498d3'}, 'lib/werkzeug/__init__.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/b96c3871168d3dab60c62958815f0d56a677d8c7', 'sha1Sum': 'b96c3871168d3dab60c62958815f0d56a677d8c7'}, 'lib/werkzeug/contrib/profiler.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/501a8e8700cc455704477e6d2e30948019d03485', 'sha1Sum': '501a8e8700cc455704477e6d2e30948019d03485'}, 'source-contexts.json': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/7a5710cf0232fbf8e823abfe382209e552e5bc37', 'sha1Sum': '7a5710cf0232fbf8e823abfe382209e552e5bc37'}, 'lib/werkzeug/_compat.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/cb7d9ae3d20e2b50e7ecba6b020519f14066e5d1', 'sha1Sum': 'cb7d9ae3d20e2b50e7ecba6b020519f14066e5d1'}, 'main.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/3e91c52628f4944f5fee7c92f1d19e994663e0e3', 'sha1Sum': '3e91c52628f4944f5fee7c92f1d19e994663e0e3'}, 'lib/werkzeug/debug/tbtools.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/2bd4bef345a8b546eea40cc4f4625c188e784e33', 'sha1Sum': '2bd4bef345a8b546eea40cc4f4625c188e784e33'}, 'lib/werkzeug/contrib/sessions.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/889a62d323406ad32efb2c2647544628db8ddcb8', 'sha1Sum': '889a62d323406ad32efb2c2647544628db8ddcb8'}, 'lib/flask/logging.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/9be1d2842ba6d57ba799571edec836e12b6c3650', 'sha1Sum': '9be1d2842ba6d57ba799571edec836e12b6c3650'}, 'lib/werkzeug/local.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/4512b397886ad3dba1c85bd021f08bdba8f3ce16', 'sha1Sum': '4512b397886ad3dba1c85bd021f08bdba8f3ce16'}, 'lib/werkzeug/debug/shared/source.png': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/a55f11f670f848b13e33bf726541d99225b28919', 'sha1Sum': 'a55f11f670f848b13e33bf726541d99225b28919'}, 'lib/werkzeug/testapp.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/fe1c100807139515c5275196916ff96baca0b580', 'sha1Sum': 'fe1c100807139515c5275196916ff96baca0b580'}, 'lib/werkzeug/posixemulation.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/317dad90c788826f6d3a30159819a2e8ffbfb07b', 'sha1Sum': '317dad90c788826f6d3a30159819a2e8ffbfb07b'}, 'lib/werkzeug/contrib/__init__.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/964bb945677cd30e53327cf7709830e0300e7a1f', 'sha1Sum': '964bb945677cd30e53327cf7709830e0300e7a1f'}, 'lib/werkzeug/debug/repr.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/f460f4473d43f561be5ec30a6646970bfd80fa57', 'sha1Sum': 'f460f4473d43f561be5ec30a6646970bfd80fa57'}, 'lib/flask/wrappers.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/21de0d089a41e02f206b9afc7219e51800883702', 'sha1Sum': '21de0d089a41e02f206b9afc7219e51800883702'}, 'lib/flask/json.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/f98496c13afc39a15f7e00733376d20b6a12d935', 'sha1Sum': 'f98496c13afc39a15f7e00733376d20b6a12d935'}, 'lib/flask/ctx.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/e433758760138f2e263fb27597e182d014a4d4a2', 'sha1Sum': 'e433758760138f2e263fb27597e182d014a4d4a2'}, 'lib/werkzeug/contrib/atom.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/ccf034500c3919bcbe0022967abae0c78d09e6a4', 'sha1Sum': 'ccf034500c3919bcbe0022967abae0c78d09e6a4'}, 'lib/flask/templating.py': {'sourceUrl': 'https://storage.googleapis.com/staging.jdiner-byte2-explore.appspot.com/93e0ec6e6a61c105407c8dfcef470981fb54f3f4', 'sha1Sum': '93e0ec6e6a61c105407c8dfcef470981fb54f3f4'}}]
+2017-02-05 01:35:25,658 INFO     ___FILE_ONLY___ Updating service [default]...
+2017-02-05 01:35:25,663 DEBUG    root            Converted YAML to JSON: "{
+  "handlers": [
+    {
+      "script": {
+        "scriptPath": "main.app"
+      }, 
+      "securityLevel": "SECURE_OPTIONAL", 
+      "urlRegex": ".*"
+    }
+  ], 
+  "libraries": [
+    {
+      "name": "jinja2", 
+      "version": "2.6"
+    }, 
+    {
+      "name": "markupsafe", 
+      "version": "0.15"
+    }
+  ], 
+  "runtime": "python27", 
+  "threadsafe": true
+}"
+2017-02-05 01:35:26,426 DEBUG    root            Received operation: [apps/jdiner-byte2-explore/operations/1fae960b-a246-4c45-a1cf-4ab9152abb03]
+2017-02-05 01:35:26,492 DEBUG    root            Operation [apps/jdiner-byte2-explore/operations/1fae960b-a246-4c45-a1cf-4ab9152abb03] not complete. Waiting 5s.
+2017-02-05 01:35:31,563 DEBUG    root            Operation [apps/jdiner-byte2-explore/operations/1fae960b-a246-4c45-a1cf-4ab9152abb03] not complete. Waiting 5s.
+2017-02-05 01:35:36,634 DEBUG    root            Operation [apps/jdiner-byte2-explore/operations/1fae960b-a246-4c45-a1cf-4ab9152abb03] not complete. Waiting 5s.
+2017-02-05 01:35:41,689 DEBUG    root            Operation [apps/jdiner-byte2-explore/operations/1fae960b-a246-4c45-a1cf-4ab9152abb03] not complete. Waiting 5s.
+2017-02-05 01:35:46,750 DEBUG    root            Operation [apps/jdiner-byte2-explore/operations/1fae960b-a246-4c45-a1cf-4ab9152abb03] complete. Result: {
+    "response": {
+        "versionUrl": "https://20170205t013520-dot-jdiner-byte2-explore.appspot.com", 
+        "name": "apps/jdiner-byte2-explore/services/default/versions/20170205t013520", 
+        "servingStatus": "SERVING", 
+        "createTime": "2017-02-05T06:35:29Z", 
+        "@type": "type.googleapis.com/google.appengine.v1.Version", 
+        "instanceClass": "F1", 
+        "runtime": "python27", 
+        "id": "20170205t013520", 
+        "threadsafe": true
+    }, 
+    "done": true, 
+    "name": "apps/jdiner-byte2-explore/operations/1fae960b-a246-4c45-a1cf-4ab9152abb03", 
+    "metadata": {
+        "target": "apps/jdiner-byte2-explore/services/default/versions/20170205t013520", 
+        "method": "google.appengine.v1.Versions.CreateVersion", 
+        "user": "jamdin@gmail.com", 
+        "insertTime": "2017-02-05T06:35:26.125Z", 
+        "ephemeralMessage": "Verifying the deployment.", 
+        "endTime": "2017-02-05T06:35:41.790Z", 
+        "@type": "type.googleapis.com/google.appengine.v1.OperationMetadataV1"
+    }
+}
+2017-02-05 01:35:47,359 DEBUG    root            Operation [apps/jdiner-byte2-explore/operations/c6c5db6b-f537-4aa4-8230-c987d3d6cc85] not complete. Waiting 5s.
+2017-02-05 01:35:52,424 DEBUG    root            Operation [apps/jdiner-byte2-explore/operations/c6c5db6b-f537-4aa4-8230-c987d3d6cc85] complete. Result: {
+    "response": {
+        "split": {
+            "allocations": {
+                "20170205t013520": 1
+            }
+        }, 
+        "@type": "type.googleapis.com/google.appengine.v1.Service", 
+        "name": "apps/jdiner-byte2-explore/services/default", 
+        "id": "default"
+    }, 
+    "done": true, 
+    "name": "apps/jdiner-byte2-explore/operations/c6c5db6b-f537-4aa4-8230-c987d3d6cc85", 
+    "metadata": {
+        "target": "apps/jdiner-byte2-explore/services/default", 
+        "method": "google.appengine.v1.Services.UpdateService", 
+        "user": "jamdin@gmail.com", 
+        "insertTime": "2017-02-05T06:35:47.006Z", 
+        "ephemeralMessage": "Now processing operation: c6c5db6b-f537-4aa4-8230-c987d3d6cc85", 
+        "endTime": "2017-02-05T06:35:49.323Z", 
+        "@type": "type.googleapis.com/google.appengine.v1.OperationMetadataV1"
+    }
+}
+2017-02-05 01:35:52,426 INFO     ___FILE_ONLY___ Deployed service [default] to [https://jdiner-byte2-explore.appspot.com]
+
+2017-02-05 01:35:52,426 INFO     ___FILE_ONLY___ 
+You can read logs from the command line by running:
+  $ gcloud app logs read -s default
+
+2017-02-05 01:35:52,427 INFO     ___FILE_ONLY___ 
+To view your application in the web browser run:
+  $ gcloud app browse
+
+2017-02-05 01:35:52,427 INFO     root            Display format "none".
+2017-02-05 01:35:52,428 DEBUG    root            SDK update checks are disabled.
+2017-02-05 01:35:52,713 DEBUG    root            Metrics reporting process started...

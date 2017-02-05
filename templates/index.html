@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Byte 1: jdiner</title>
+    <title>All men must die - GOT</title>
 
     <meta name="description" content="Source code generated using layoutit.com">
     <meta name="author" content="Jamie Diner">
@@ -29,8 +29,26 @@
         <p>We can see from the map that most of the best ranked universities in the United States are located in the Northeastern region of the country.</p>
 
      </div>
-      <iframe width="500" height="300" scrolling="no" frameborder="no" src="https://fusiontables.google.com/embedviz?q=select+col1+from+1jeRGF6QV86pzvirx2G9bEq3UF8WR4O-b-LcJ2l2H&amp;viz=MAP&amp;h=false&amp;lat=35.14420651031508&amp;lng=-104.17110811386715&amp;t=1&amp;z=4&amp;l=col1&amp;y=2&amp;tmplt=2&amp;hml=GEOCODABLE"></iframe>
-
+      <div class="table-responsive">
+  <table class="table table-striped table-hover">
+    <thead class="thead-inverse">
+     <tr> 
+{% for item in headers %}
+         <th>{{ item }}</th>
+{% endfor %}
+     </tr>
+    </thead>
+    <tbody>
+{% for row in content %}
+     <tr>
+  {% for datum in row %}
+            <td>{{ datum }} </td>
+  {% endfor %}
+     </tr>
+{% endfor %}
+    </tbody>
+   </table>
+</div> 
 
       </div> <!-- /page-header -->
 </div>

@@ -1,0 +1,75 @@
+2017-02-04 21:43:31,478 DEBUG    root            Loaded Command Group: ['gcloud', 'projects']
+2017-02-04 21:43:31,553 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'list']
+2017-02-04 21:43:31,554 DEBUG    root            Running gcloud.projects.list with Namespace(__calliope_internal_deepest_parser=ArgumentParser(prog='gcloud.projects.list', usage=None, description='Lists all active projects, where the active account has Owner, Editor or\nViewer permissions. Projects are listed in alphabetical order by project name.\nProjects that have been deleted or are pending deletion are not included.\n\nYou can specify the maximum number of projects to list using the `--limit`\nflag.\n\n## EXAMPLES\n\nThe following command lists a maximum of five projects sorted alphabetically\nby name:\n\n  $ {command} --limit=5', version=None, formatter_class=<class 'argparse.HelpFormatter'>, conflict_handler='error', add_help=False), account=None, authority_selector=None, authorization_token_file=None, calliope_command=<googlecloudsdk.calliope.backend.Command object at 0x7f668bd64d10>, command_path=['gcloud', 'projects', 'list'], configuration=None, credential_file_override=None, document=None, filter=None, flatten=None, format=None, h=None, help=None, http_timeout=None, limit=None, log_http=None, page_size=None, project=None, quiet=None, sort_by=None, trace_email=None, trace_log=None, trace_token=None, uri=False, user_output_enabled=None, verbosity='warning', version=None).
+2017-02-04 21:43:33,149 INFO     root            Display format "
+          table(
+            projectId:sort=1,
+            name,
+            projectNumber
+          )
+        ".
+2017-02-04 21:43:33,380 INFO     ___FILE_ONLY___ PROJECT_ID
+2017-02-04 21:43:33,380 INFO     ___FILE_ONLY___                 
+2017-02-04 21:43:33,380 INFO     ___FILE_ONLY___ NAME
+2017-02-04 21:43:33,380 INFO     ___FILE_ONLY___                   
+2017-02-04 21:43:33,380 INFO     ___FILE_ONLY___ PROJECT_NUMBER
+2017-02-04 21:43:33,380 INFO     ___FILE_ONLY___ 
+
+2017-02-04 21:43:33,380 INFO     ___FILE_ONLY___ api-project-917504042389
+2017-02-04 21:43:33,381 INFO     ___FILE_ONLY___   
+2017-02-04 21:43:33,381 INFO     ___FILE_ONLY___ API Project
+2017-02-04 21:43:33,381 INFO     ___FILE_ONLY___            
+2017-02-04 21:43:33,381 INFO     ___FILE_ONLY___ 917504042389
+2017-02-04 21:43:33,381 INFO     ___FILE_ONLY___ 
+
+2017-02-04 21:43:33,381 INFO     ___FILE_ONLY___ jdiner-byte1
+2017-02-04 21:43:33,381 INFO     ___FILE_ONLY___               
+2017-02-04 21:43:33,381 INFO     ___FILE_ONLY___ jdiner-byte1
+2017-02-04 21:43:33,381 INFO     ___FILE_ONLY___           
+2017-02-04 21:43:33,381 INFO     ___FILE_ONLY___ 510559630220
+2017-02-04 21:43:33,381 INFO     ___FILE_ONLY___ 
+
+2017-02-04 21:43:33,382 INFO     ___FILE_ONLY___ jdiner-byte2-explore
+2017-02-04 21:43:33,382 INFO     ___FILE_ONLY___       
+2017-02-04 21:43:33,382 INFO     ___FILE_ONLY___ jdiner-byte2-explore
+2017-02-04 21:43:33,382 INFO     ___FILE_ONLY___   
+2017-02-04 21:43:33,382 INFO     ___FILE_ONLY___ 454279220524
+2017-02-04 21:43:33,382 INFO     ___FILE_ONLY___ 
+
+2017-02-04 21:43:33,382 INFO     ___FILE_ONLY___ jdiner-explore
+2017-02-04 21:43:33,382 INFO     ___FILE_ONLY___             
+2017-02-04 21:43:33,382 INFO     ___FILE_ONLY___ jdiner-explore
+2017-02-04 21:43:33,383 INFO     ___FILE_ONLY___         
+2017-02-04 21:43:33,383 INFO     ___FILE_ONLY___ 745354899002
+2017-02-04 21:43:33,383 INFO     ___FILE_ONLY___ 
+
+2017-02-04 21:43:33,383 INFO     ___FILE_ONLY___ jdiner-explore-byte2
+2017-02-04 21:43:33,383 INFO     ___FILE_ONLY___       
+2017-02-04 21:43:33,383 INFO     ___FILE_ONLY___ jdiner-explore-byte2
+2017-02-04 21:43:33,383 INFO     ___FILE_ONLY___   
+2017-02-04 21:43:33,383 INFO     ___FILE_ONLY___ 613712953858
+2017-02-04 21:43:33,383 INFO     ___FILE_ONLY___ 
+
+2017-02-04 21:43:33,384 INFO     ___FILE_ONLY___ jdiner-fusion
+2017-02-04 21:43:33,384 INFO     ___FILE_ONLY___              
+2017-02-04 21:43:33,384 INFO     ___FILE_ONLY___ jdiner-fusion
+2017-02-04 21:43:33,384 INFO     ___FILE_ONLY___          
+2017-02-04 21:43:33,384 INFO     ___FILE_ONLY___ 536184709111
+2017-02-04 21:43:33,384 INFO     ___FILE_ONLY___ 
+
+2017-02-04 21:43:33,384 INFO     ___FILE_ONLY___ jdiner-mobile-byte3
+2017-02-04 21:43:33,384 INFO     ___FILE_ONLY___        
+2017-02-04 21:43:33,384 INFO     ___FILE_ONLY___ jdiner-mobile-byte3
+2017-02-04 21:43:33,384 INFO     ___FILE_ONLY___    
+2017-02-04 21:43:33,384 INFO     ___FILE_ONLY___ 532761023660
+2017-02-04 21:43:33,385 INFO     ___FILE_ONLY___ 
+
+2017-02-04 21:43:33,385 INFO     ___FILE_ONLY___ mobile-byte3
+2017-02-04 21:43:33,385 INFO     ___FILE_ONLY___               
+2017-02-04 21:43:33,385 INFO     ___FILE_ONLY___ mobile-byte3
+2017-02-04 21:43:33,385 INFO     ___FILE_ONLY___           
+2017-02-04 21:43:33,385 INFO     ___FILE_ONLY___ 723528296104
+2017-02-04 21:43:33,385 INFO     ___FILE_ONLY___ 
+
+2017-02-04 21:43:33,386 DEBUG    root            SDK update checks are disabled.
+2017-02-04 21:43:33,393 DEBUG    root            Metrics reporting process started...

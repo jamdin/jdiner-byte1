@@ -87,3 +87,79 @@ gcloud beta sql connect mobile-data --user=root --pasword
 gcloud beta sql connect mobile-data --user=root --password
 gcloud beta sql connect mobile-data --user=root
 gcloud beta sql connect mobile-data --user=jamdin
+dev_appserver.py $PWD
+dev_appserver.py --log_level=debug $PWD
+dev_appserver.py $PWD
+more .profile
+dev_appserver.py $PWD
+pwd
+ls
+cd src
+ls
+cd jdiner-explore/
+dev_appserver.py $PWD
+dev_appserver.py --log_level=debug $PWD
+cd src
+cd jdiner-explore/
+dev_appserver.py $PWD
+dev_appserver.py $PWD
+cd src
+cd jdiner-explore/
+dev_appserver.py $PWD
+dev_appserver.py --log_level=debug $PWD
+wget www.nikolabanovic.net/nb-teaching.explore.zip
+dev_appserver.py --log_level=debug $PWD
+dev_appserver.py --log_level=debug $PWD
+dev_appserver.py --log_level=debug $PWD
+dev_appserver.py --log_level=debug $PWD
+dev_appserver.py --log_level=debug $PWD
+cd src/
+cd jdiner-explore/
+dev_appserver.py --log_level=debug $PWD
+wget www.nikolabanovic.net/nb-teaching-explore.zip
+dev_appserver.py --log_level=debug $PWD
+wget www.nikolabanovic.net/nb-teaching-explore.zip
+cd ..
+cd nikola/
+unzip
+unzip nb-teaching-explore.zip
+cd ..
+cd nikola
+dev_appserver.py .
+ls
+cd src
+cd jdiner-explore/
+cd src
+cd nikola/
+dev_appserver.py --log_level=debug $PWD
+dev_appserver.py --log_level=debug $PWD
+cd ..
+cd jdiner-explore-working/
+dev_appserver.py --log_level=debug $PWD
+gcloud app deploy
+gcloud app deploy
+gcloud app deploy
+gcloud app deploy
+cd src
+cd jdiner-explore-working/
+dev_appserver.py --log_level=debug .
+dev_appserver.py --log_level=debug .
+dev_appserver.py --log_level=debug .
+dev_appserver.py --log_level=debug .
+open .profile
+cd src
+cd jdiner-explore-working/
+help
+cd
+cd
+ls -a
+.profile
+.profile -m
+arallel_coordinates(data,'Name')
+TUTORIALDIR=~/src/jdiner-byte2-explore/python_gae_quickstart-2017-02-05-01-30a
+git clone https://github.com/GoogleCloudPlatform/appengine-try-python-flask.git $TUTORIALDIR
+cd $TUTORIALDIR
+git checkout gcloud
+dev_appserver.py $PWD
+gcloud app create
+gcloud app deploy app.yaml --project jdiner-byte2-explore
