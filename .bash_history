@@ -163,3 +163,7 @@ git checkout gcloud
 dev_appserver.py $PWD
 gcloud app create
 gcloud app deploy app.yaml --project jdiner-byte2-explore
+git status
+git add .
+git commit -m "copied nikola code"
+git push
